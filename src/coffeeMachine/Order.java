@@ -4,10 +4,16 @@ public class Order {
 
 	private Drink drink;
 	private int sucre;
+	private double amount;
 
-	public Order(Drink drink, int sucre) {
+	public Order(Drink drink, int sucre, double amount) {
 		this.drink = drink;
 		this.sucre = sucre;
+		this.amount = amount;
+	}
+
+	public double getAmount() {
+		return amount;
 	}
 
 	public Drink getDrink() {
