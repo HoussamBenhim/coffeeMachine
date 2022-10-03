@@ -10,6 +10,7 @@ public class MakerImpl implements Maker {
 		}
 		StringBuilder res = new StringBuilder();
 		res.append(order.getDrink().type)
+				.append(order.isHot() ? "h": "")
 				.append(":")
 				.append(order.getSucre() > 0 ? order.getSucre() : "")
 				.append(":")

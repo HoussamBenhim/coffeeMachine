@@ -6,10 +6,12 @@ public class Order {
 	private int sucre;
 	private double amount;
 
-	public Order(Drink drink, int sucre, double amount) {
+	private boolean hot;
+	public Order(Drink drink, int sucre, double amount, boolean hot) {
 		this.drink = drink;
 		this.sucre = sucre;
 		this.amount = amount;
+		this.hot = hot;
 	}
 
 	public double getAmount() {
@@ -32,4 +34,7 @@ public class Order {
 		this.sucre = sucre;
 	}
 
+	public boolean isHot() {
+		return hot;
+	}
 }
